@@ -1,0 +1,15 @@
+[package]
+name = "MONTECARLO_RUST"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "calcul_rust"
+crate-type = ["cdylib"]
+
+[dependencies]
+
+rand = "0.8"
+rand_distr = "0.4"
+statrs = "0.16"
+pyo3 = { version = "0.21", features = ["extension-module"]}
